@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcula Prazo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="conteudo-formulario">
+        <h2 class="titulo-principal">Calcula <span>Prazo</span></h2>
+        <div class="formulario">
+            <form action="" class="adicionar" id="novoItem">
+                <label for="objetivo">Tarefa</label>
+                <input type="text" name="objetivo" id="nome">
+                <label for="data">Data para terminar a tarefa</label>
+                <input type="date" name="data" id="data">
+                <input type="submit" value="Adicionar" class="cadastrar" id="cadastrar">
+            </form>
+        </div>
+    </section>
+    <section class="conteudo-principal" id="conteudo-principal">
+        <div class="conteudo">
+            <div class="botoes">
+                <button class="botao ativo">aqui aparecerá sua tarefa</button>
+            </div>
+            <div class="abas-textos">
+                <div class="aba-conteudo ativo">
+                    <h4 class="aba-conteudo-titulo-secundario">Tempo para completar a tarefa</h4>
+                    <div class="contador">
+                        <div class="contador-digito">
+                            <p class="contador-digito-numero" id="dias"></p>
+                            <p class="contador-digito-texto">dias</p>
+                        </div>
+                        <div class="contador-digito">
+                            <p class="contador-digito-numero" id="horas"></p>
+                            <p class="contador-digito-texto">horas</p>
+                        </div>
+                        <div class="contador-digito">
+                            <p class="contador-digito-numero" id="min"></p>
+                            <p class="contador-digito-texto">min</p>
+                        </div>
+                        <div class="contador-digito">
+                            <p class="contador-digito-numero" id="seg"></p>
+                            <p class="contador-digito-texto">seg</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="main.js"></script>
+</body>
+
+</html>
